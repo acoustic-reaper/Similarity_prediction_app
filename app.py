@@ -50,7 +50,7 @@ def predict_similarity():
     # normalized_similarity_score = (similarity_score + 1) / 2
 
     # Return the similarity score in the response
-    return jsonify({"similarity_score": cosine_similarity(tfidf_matrix)[0, 1]})
+    return jsonify({"similarity score": cosine_similarity(tfidf_matrix)[0, 1]})
 
 if __name__ == '__main__':
     app.run(debug=True)
